@@ -1,0 +1,44 @@
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>pw.sxy</groupId>
+        <artifactId>sxy-security</artifactId>
+        <version>${sxy-version}</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>sxy-web</artifactId>
+    <packaging>war</packaging>
+    <description>管理后台</description>
+
+    <dependencies>
+        <dependency>
+            <groupId>pw.sxy</groupId>
+            <artifactId>sxy-common</artifactId>
+            <version>${sxy-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>pw.sxy</groupId>
+            <artifactId>sxy-shiro</artifactId>
+            <version>${sxy-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>pw.sxy</groupId>
+            <artifactId>sxy-gen</artifactId>
+            <version>${sxy-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>pw.sxy</groupId>
+            <artifactId>sxy-schedule</artifactId>
+            <version>${sxy-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>pw.sxy</groupId>
+            <artifactId>sxy-api</artifactId>
+            <version>${sxy-version}</version>
+        </dependency>
+    </dependencies>
+    <build>
+        <finalName>sxy-security</finalName>
+    </build>
+
+</project>

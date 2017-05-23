@@ -1,0 +1,10 @@
+pw\sxy\controller\SysOssController.class
+pw\sxy\service\impl\SysOssServiceImpl.class
+pw\sxy\controller\SysPageController.class
+pw\sxy\entity\SysOssEntity.class
+pw\sxy\task\TestTask.class
+pw\sxy\service\SysOssService.class
+pw\sxy\controller\SysLogController.class
+pw\sxy\dao\SysOssDao.class
+pw\sxy\aop\SysLogAspect.class
+pw\sxy\controller\SysConfigController.class
