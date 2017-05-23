@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://D:\Java_src\sxy-security\sxy-common\renren-common.iml" filepath="D:\Java_src\sxy-security\sxy-common\renren-common.iml" />
+      <module fileurl="file://D:\Java_src\sxy-security\sxy-gen\renren-gen.iml" filepath="D:\Java_src\sxy-security\sxy-gen\renren-gen.iml" />
+      <module fileurl="file://D:\Java_src\sxy-security\sxy-schedule\renren-schedule.iml" filepath="D:\Java_src\sxy-security\sxy-schedule\renren-schedule.iml" />
+      <module fileurl="file://D:\Java_src\sxy-security\sxy-shiro\renren-shiro.iml" filepath="D:\Java_src\sxy-security\sxy-shiro\renren-shiro.iml" />
+      <module fileurl="file://D:\Java_src\sxy-security\sxy-web\renren-web.iml" filepath="D:\Java_src\sxy-security\sxy-web\renren-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sxy-api/sxy-api.iml" filepath="$PROJECT_DIR$/sxy-api/sxy-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sxy-common/sxy-common.iml" filepath="$PROJECT_DIR$/sxy-common/sxy-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sxy-gen/sxy-gen.iml" filepath="$PROJECT_DIR$/sxy-gen/sxy-gen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sxy-schedule/sxy-schedule.iml" filepath="$PROJECT_DIR$/sxy-schedule/sxy-schedule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sxy-security.iml" filepath="$PROJECT_DIR$/sxy-security.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sxy-shiro/sxy-shiro.iml" filepath="$PROJECT_DIR$/sxy-shiro/sxy-shiro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sxy-web/sxy-web.iml" filepath="$PROJECT_DIR$/sxy-web/sxy-web.iml" />
+    </modules>
+  </component>
+</project>
