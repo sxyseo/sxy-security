@@ -13,8 +13,10 @@ import java.util.Map;
  */
 public interface TokenService {
 
+    // 获取token信息通过用户ID
     TokenEntity queryByUserId(Long userId);
 
+    // 获取token信息通过token值
     TokenEntity queryByToken(String token);
 
     void save(TokenEntity token);

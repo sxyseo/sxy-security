@@ -27,9 +27,12 @@ public class ApiRegisterController {
     /**
      * 注册
      */
+    // 使用 IgnoreAuth注解 忽略Token验证
     @IgnoreAuth
     @PostMapping("register")
+    // R 返回数据
     public R register(@RequestBody UserEntity user) {
+        // Assert 数据校验 判空
         Assert.isBlank(user.getMobile(), "手机号不能为空");
         Assert.isBlank(user.getPassword(), "密码不能为空");
 

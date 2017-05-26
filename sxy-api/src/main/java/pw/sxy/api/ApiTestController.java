@@ -31,10 +31,11 @@ public class ApiTestController {
     /**
      * 忽略Token验证测试
      */
+    // 使用 IgnoreAuth注解 忽略Token验证
     @IgnoreAuth
     @GetMapping("notToken")
     public R notToken() {
-
+        // 忽略Token验证访问
         return R.ok().put("message", "无需token也能访问。。。");
     }
 }

@@ -11,5 +11,6 @@ import pw.sxy.entity.UserEntity;
  */
 public interface UserDao extends BaseDao<UserEntity> {
 
+    // 获取用户信息通过用户手机号
     UserEntity queryByMobile(String mobile);
 }

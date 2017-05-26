@@ -3,11 +3,12 @@
 
 <mapper namespace="pw.sxy.dao.UserDao">
 
-
+    <!--获取用户信息通过用户ID-->
     <select id="queryObject" resultType="pw.sxy.entity.UserEntity">
 		select * from tb_user where user_id = #{value}
 	</select>
 
+    <!--获取用户信息通过用户手机号-->
     <select id="queryByMobile" resultType="pw.sxy.entity.UserEntity">
         select * from tb_user where mobile = #{value}
     </select>

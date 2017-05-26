@@ -20,10 +20,13 @@ public interface UserService {
 
     int queryTotal(Map<String, Object> map);
 
+    // 新增
     void save(UserEntity user);
 
+    // 更新
     void update(UserEntity user);
 
+    // 删除
     void delete(Long userId);
 
     void deleteBatch(Long[] userIds);

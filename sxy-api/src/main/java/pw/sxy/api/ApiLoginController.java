@@ -30,9 +30,12 @@ public class ApiLoginController {
     /**
      * 登录
      */
+
+    // 使用 IgnoreAuth注解 忽略Token验证
     @IgnoreAuth
     @PostMapping("login")
     public R login(String mobile, String password) {
+        // Assert 数据校验 判空
         Assert.isBlank(mobile, "手机号不能为空");
         Assert.isBlank(password, "密码不能为空");
 

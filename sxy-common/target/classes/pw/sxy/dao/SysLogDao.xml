@@ -3,6 +3,7 @@
 
 <mapper namespace="pw.sxy.dao.SysLogDao">
 
+	<!--查询日志信息通过id-->
 	<select id="queryObject" resultType="pw.sxy.entity.SysLogEntity">
 		select * from sys_log where id = #{value}
 	</select>

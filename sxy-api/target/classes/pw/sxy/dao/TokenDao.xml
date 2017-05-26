@@ -3,14 +3,17 @@
 
 <mapper namespace="pw.sxy.dao.TokenDao">
 
+    <!--获取token信息通过用户ID-->
     <select id="queryByUserId" resultType="pw.sxy.entity.TokenEntity">
         select * from tb_token where user_id = #{value}
     </select>
 
+    <!--获取token信息通过用户token值-->
     <select id="queryByToken" resultType="pw.sxy.entity.TokenEntity">
         select * from tb_token where token = #{value}
     </select>
 
+    <!--新增用户token信息-->
     <insert id="save" parameterType="pw.sxy.entity.TokenEntity">
         insert into tb_token
         (
@@ -28,6 +31,7 @@
         )
     </insert>
 
+    <!--更新用户token信息-->
     <update id="update" parameterType="pw.sxy.entity.TokenEntity">
         update tb_token
         <set>

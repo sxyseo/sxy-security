@@ -14,13 +14,13 @@ import java.util.Date;
 public class TokenEntity implements Serializable {
     private static final long serialVersionUID = 1L;
 
-    //用户ID
+    // 用户ID
     private Long userId;
-    //token
+    // token
     private String token;
-    //过期时间
+    // 过期时间
     private Date expireTime;
-    //更新时间
+    // 更新时间
     private Date updateTime;
 
     /**

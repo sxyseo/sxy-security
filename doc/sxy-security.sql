@@ -171,7 +171,7 @@ CREATE TABLE `qrtz_scheduler_state` (
 -- ----------------------------
 -- Records of qrtz_scheduler_state
 -- ----------------------------
-INSERT INTO `qrtz_scheduler_state` VALUES ('SxyScheduler', 'DESKTOP-KHDT9R71495504970608', '1495527282796', '15000');
+INSERT INTO `qrtz_scheduler_state` VALUES ('SxyScheduler', 'sxy', '1495527282796', '15000');
 
 -- ----------------------------
 -- Table structure for qrtz_simple_triggers
@@ -555,6 +555,6 @@ CREATE TABLE `tb_user` (
 
 -- ----------------------------
 -- Records of tb_user
--- 账号：13188888888  密码：admin
+-- 账号：18888888888  密码：admin
 -- ----------------------------
 INSERT INTO `tb_user` VALUES ('1', 'mark', '18888888888', '8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918', '2017-03-23 22:37:41');

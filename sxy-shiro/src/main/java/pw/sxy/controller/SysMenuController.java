@@ -69,10 +69,10 @@ public class SysMenuController extends AbstractController {
     @RequestMapping("/perms")
     @RequiresPermissions("sys:menu:perms")
     public R perms() {
-        //查询列表数据
+        // 查询列表数据
         List<SysMenuEntity> menuList = null;
 
-        //只有超级管理员，才能查看所有管理员列表
+        // 只有超级管理员，才能查看所有管理员列表
         if (getUserId() == Constant.SUPER_ADMIN) {
             menuList = sysMenuService.queryList(new HashMap<String, Object>());
         } else {
@@ -161,21 +161,21 @@ public class SysMenuController extends AbstractController {
             throw new RRException("上级菜单不能为空");
         }
 
-        //菜单
+        // 菜单
         if (menu.getType() == MenuType.MENU.getValue()) {
             if (StringUtils.isBlank(menu.getUrl())) {
                 throw new RRException("菜单URL不能为空");
             }
         }
 
-        //上级菜单类型
+        // 上级菜单类型
         int parentType = MenuType.CATALOG.getValue();
         if (menu.getParentId() != 0) {
             SysMenuEntity parentMenu = sysMenuService.queryObject(menu.getParentId());
             parentType = parentMenu.getType();
         }
 
-        //目录、菜单
+        // 目录、菜单
         if (menu.getType() == MenuType.CATALOG.getValue() ||
                 menu.getType() == MenuType.MENU.getValue()) {
             if (parentType != MenuType.CATALOG.getValue()) {
@@ -184,7 +184,7 @@ public class SysMenuController extends AbstractController {
             return;
         }
 
-        //按钮
+        // 按钮
         if (menu.getType() == MenuType.BUTTON.getValue()) {
             if (parentType != MenuType.MENU.getValue()) {
                 throw new RRException("上级菜单只能为菜单类型");

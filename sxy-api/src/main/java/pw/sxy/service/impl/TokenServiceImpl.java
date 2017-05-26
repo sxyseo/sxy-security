@@ -21,6 +21,7 @@ public class TokenServiceImpl implements TokenService {
 
     @Override
     public TokenEntity queryByUserId(Long userId) {
+        // 获取token信息通过用户ID
         return tokenDao.queryByUserId(userId);
     }
 
@@ -41,15 +42,15 @@ public class TokenServiceImpl implements TokenService {
 
     @Override
     public Map<String, Object> createToken(long userId) {
-        //生成一个token
+        // 生成一个token
         String token = UUID.randomUUID().toString();
-        //当前时间
+        // 当前时间
         Date now = new Date();
 
-        //过期时间
+        // 过期时间
         Date expireTime = new Date(now.getTime() + EXPIRE * 1000);
 
-        //判断是否生成过token
+        // 判断是否生成过token
         TokenEntity tokenEntity = queryByUserId(userId);
         if (tokenEntity == null) {
             tokenEntity = new TokenEntity();
@@ -58,14 +59,14 @@ public class TokenServiceImpl implements TokenService {
             tokenEntity.setUpdateTime(now);
             tokenEntity.setExpireTime(expireTime);
 
-            //保存token
+            // 保存token
             save(tokenEntity);
         } else {
             tokenEntity.setToken(token);
             tokenEntity.setUpdateTime(now);
             tokenEntity.setExpireTime(expireTime);
 
-            //更新token
+            // 更新token
             update(tokenEntity);
         }
 
