@@ -49,10 +49,10 @@ public class SysMenuController extends AbstractController {
     @RequestMapping("/select")
     @RequiresPermissions("sys:menu:select")
     public R select() {
-        //查询列表数据
+        // 查询列表数据
         List<SysMenuEntity> menuList = sysMenuService.queryNotButtonList();
 
-        //添加顶级菜单
+        // 添加顶级菜单
         SysMenuEntity root = new SysMenuEntity();
         root.setMenuId(0L);
         root.setName("一级菜单");
@@ -145,7 +145,6 @@ public class SysMenuController extends AbstractController {
     @RequestMapping("/user")
     public R user() {
         List<SysMenuEntity> menuList = sysMenuService.getUserMenuList(getUserId());
-
         return R.ok().put("menuList", menuList);
     }
 
